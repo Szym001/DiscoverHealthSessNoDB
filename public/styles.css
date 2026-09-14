@@ -1,0 +1,122 @@
+:root {
+    color-scheme: light;
+    font-family: Inter, system-ui, sans-serif;
+    color: #18332f;
+    background: #eef7f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 3rem max(1.5rem, calc((100% - 960px) / 2));
+    color: white;
+    background: #126b5c;
+}
+
+header h1 {
+    margin: 0.15rem 0;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.eyebrow {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+main {
+    width: min(960px, calc(100% - 3rem));
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #c9e2dc;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 8px 24px rgb(18 107 92 / 8%);
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 0.85rem;
+    font-weight: 700;
+}
+
+input,
+select,
+button {
+    min-height: 42px;
+    margin-top: 0.35rem;
+    border: 1px solid #87ada5;
+    border-radius: 7px;
+    font: inherit;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+}
+
+button {
+    padding: 0.55rem 1rem;
+    color: white;
+    background: #126b5c;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0b5045;
+}
+
+.results {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.appointment-card {
+    padding: 1rem;
+    border-left: 4px solid #35a48f;
+    border-radius: 8px;
+    background: #f4fbf9;
+}
+
+.appointment-card p {
+    margin-top: 0;
+}
+
+.status {
+    min-height: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.success {
+    color: #126b5c;
+}
+
+.error {
+    color: #a52b2b;
+}
+
+@media (max-width: 680px) {
+    .account-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoverHealth Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="client.mjs"></script>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Healthcare directory</p>
+        <h1>DiscoverHealth</h1>
+        <p>Find specialist appointments from trusted local clinics.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Find a specialist</h2>
+            <label for="appointment_time">Preferred appointment time</label>
+            <select id="appointment_time">
+                <option value="9">09:00</option>
+                <option value="11">11:00</option>
+                <option value="13">13:00</option>
+                <option value="15">15:00</option>
+            </select>
+            <button id="btnFindSpecialists">Search appointments</button>
+            <div id="specialistResults" class="results"></div>
+            <p id="appointmentStatus" class="status"></p>
+        </section>
+
+        <section class="account-grid">
+            <div>
+                <h2>Create an account</h2>
+                <label for="register_username">Username</label>
+                <input id="register_username" autocomplete="username">
+
+                <label for="register_password">Password</label>
+                <input id="register_password" type="password" autocomplete="new-password">
+
+                <label for="register_confirm_password">Confirm password</label>
+                <input id="register_confirm_password" type="password" autocomplete="new-password">
+
+                <button id="btnCreateAccount">Create account</button>
+                <p id="registrationStatus" class="status"></p>
+            </div>
+
+            <div>
+                <h2>Patient login</h2>
+                <label for="account_username">Username</label>
+                <input id="account_username" autocomplete="username">
+
+                <label for="account_password">Password</label>
+                <input id="account_password" type="password" autocomplete="current-password">
+
+                <button id="btnAccountLogin">Log in</button>
+                <p id="accountStatus" class="status"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

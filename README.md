@@ -48,3 +48,5 @@ Add a new row → INSERT
 Change an existing row → UPDATE
 Remove a row → DELETE
 Find rows → SELECT
+
+https://github.com/QALECTURE
